@@ -54,7 +54,7 @@ Workstations and devices are placed separately to:
 
 ## Evidence
 
-(Insert screenshot)
+![  ](./org.png)
 
 
 
