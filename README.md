@@ -4,11 +4,11 @@
 
 This project demonstrates the complete setup, enumeration, and initial security assessment of a Windows Active Directory environment using offensive (Red Team) and defensive (Blue Team) techniques in a controlled lab environment.
 The objective was to build a realistic corporate domain setup and perform:
-   Domain configuration
-   User and group management
-   Group Policy configuration
-   Attack surface identification
-   Defensive validation using real system behavior
+      Domain configuration
+      User and group management
+      Group Policy configuration
+      Attack surface identification
+      Defensive validation using real system behavior
 This project documents both successful attacks and blocked attack attempts, reflecting real-world environments where not all attacks work due to proper security configurations.
 
 **LAB ARCHITECTURE**
