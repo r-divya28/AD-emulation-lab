@@ -1,42 +1,85 @@
-# Domain Promotion
+# Domain Promotion and Forest Creation
 
 ## Objective
 
-Convert the Windows Server instance into the root authority for the enterprise domain.
+Promote the server from a standalone Windows machine into a Domain Controller and create a new Active Directory forest.
 
-## Domain Parameters
-
-- Forest root: mydomain.local  
-- Global catalog enabled  
-- DNS installed locally  
-- Directory Services Recovery Mode enabled  
-
-## Operational Impact
-
-The server transitions from a standalone machine to:
+This action converted the host from a general-purpose server into:
 
 - Authentication authority  
-- Credential store  
-- Ticket-granting service  
-- Directory services provider  
-- Centralized identity system  
+- Credential database  
+- Domain policy engine  
+- Central identity lifecycle system  
+
+---
+
+## Domain Definition
+
+The following parameters were selected:
+
+- Forest name: mydomain.local  
+- Integrated DNS service  
+- Global Catalog enabled  
+- Directory Services Recovery Mode configured  
+
+---
+
+## What Happens During Promotion
+
+Internally, this process performs:
+
+- Creation of NTDS database  
+- Initialization of SYSVOL  
+- Installation of Kerberos services  
+- Registration of LDAP endpoints  
+- Activation of DNS zones  
+- Establishment of replication engine  
+
+The system becomes the root trust boundary of the environment.
+
+---
 
 ## Evidence
 
-![Domain Promotion](./domain_promotion.png)
+(Insert Screenshot Here)
 
-## Result
+---
 
-Forest creation succeeded with no warnings or configuration errors.
+## Security Perspective
 
-## Risk Considerations
+This stage marks the biggest security shift:
 
-This step introduces new risk exposure:
+Before:
+- One compromised host
 
-- Credential theft impact becomes high  
-- Compromising DC = compromising domain  
+After:
+- One compromised domain = total compromise
+
+The Domain Controller now contains:
+
+- User hashes  
+- Trust relationships  
+- Group membership data  
+- Password policies  
+- Authentication secrets  
+
+Logging into this machine means compromising everything.
+
+---
+
+## Risk Classification
+
+Privilege tier: Tier 0  
+Impact level if breached: Critical
+
+---
 
 ## Recommendation
 
-Restrict Domain Admin membership and log DC authentication carefully.
+Organizations should:
 
+- Limit DC interactive logins  
+- Monitor Kerberos logs  
+- Separate admin tiers  
+- Enforce logging centrally  
+- Harden network access first at the DC layer  
