@@ -37,7 +37,7 @@ Passwords that never expire or are short enable compromise with trivial effort.
 
 ## Evidence
 
-(Insert screenshot)
+![Policy Config](./policy.png)
 
 
 
