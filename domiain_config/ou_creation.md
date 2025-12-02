@@ -10,7 +10,7 @@ Rather than keeping all objects in default containers, custom OUs were designed 
 - Cleaner audits  
 - Logical separation of responsibilities  
 
----
+
 
 ## OU Structure Implemented
 
@@ -22,7 +22,7 @@ Three organizational units were created:
 
 Each OU was designed to represent a real operational boundary inside an organization.
 
----
+
 
 ## Design Logic
 
@@ -50,13 +50,13 @@ Workstations and devices are placed separately to:
 - Manage machine-level security  
 - Control device identity independently from users  
 
----
+
 
 ## Evidence
 
 (Insert screenshot)
 
----
+
 
 ## Security Consideration
 
@@ -69,7 +69,7 @@ Leaving objects in default system containers makes:
 
 Proper OU design is foundational for secure Active Directory administration.
 
----
+
 
 ## Recommendation
 
