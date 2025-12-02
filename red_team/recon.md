@@ -75,7 +75,7 @@ Typical corporate behavior.
 
 ## Evidence
 
-(Insert Screenshot Here)
+![LDAP](./ldap.png)
 
 
 
