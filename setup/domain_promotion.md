@@ -11,7 +11,7 @@ This action converted the host from a general-purpose server into:
 - Domain policy engine  
 - Central identity lifecycle system  
 
----
+
 
 ## Domain Definition
 
@@ -22,7 +22,7 @@ The following parameters were selected:
 - Global Catalog enabled  
 - Directory Services Recovery Mode configured  
 
----
+
 
 ## What Happens During Promotion
 
@@ -37,13 +37,13 @@ Internally, this process performs:
 
 The system becomes the root trust boundary of the environment.
 
----
+
 
 ## Evidence
 
 (Insert Screenshot Here)
 
----
+
 
 ## Security Perspective
 
@@ -65,14 +65,14 @@ The Domain Controller now contains:
 
 Logging into this machine means compromising everything.
 
----
+
 
 ## Risk Classification
 
 Privilege tier: Tier 0  
 Impact level if breached: Critical
 
----
+
 
 ## Recommendation
 
