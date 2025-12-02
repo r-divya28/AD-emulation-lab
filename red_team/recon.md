@@ -22,7 +22,7 @@ Connectivity confirms:
 
 ## Evidence
 
-(Insert Screenshot Here)
+![Ping](./ping.png)
 
 
 
@@ -45,9 +45,9 @@ This means:
 - No exposed dev services  
 - No unnecessary open ports
 
-  ## Evidence
+## Evidence
 
-(Insert Screenshot Here)
+![NMap](./nmap.png)
 
 
 
@@ -109,7 +109,7 @@ From an attack perspective:
 
 Low exposure at perimeter authentication level.
 
----
+
 
 ## Recommendation
 
