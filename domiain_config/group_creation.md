@@ -38,7 +38,7 @@ Groups allow:
 
 ## Evidence
 
-(Insert screenshot)
+![ ](./group.png)
 
 
 
